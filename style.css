@@ -1,0 +1,204 @@
+body{
+    background-color: rgb(8, 8, 8);
+    margin : 0;
+    padding: 0;
+    line-height: 1.5em;
+}
+
+.main{
+    background-image: url(h.jpg);
+    font-family: Arial, Helvetica, sans-serif;
+    background-position: top;
+    background-size: cover;
+    height: 200px;
+
+}
+
+.navbar{
+    width: 12px;
+    height: 7px;
+    margin: auto;
+}
+
+.icon{
+    width: 200px;
+    height: 70px;
+    float: left;
+}
+
+.logo{
+    color: chartreuse;
+    font-size: 60px;
+    font-family: Arial;
+    padding-left: 40px;
+    padding-top: 0px;
+}
+
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+
+#footer{
+    clear: left;
+    width: 100%;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(2, 2, 2);
+    padding: 4px;
+}
+
+/* NAVIGATION BAR */
+
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li{
+    list-style: none;
+    margin-left:100px;
+    margin-top: 140px;
+    font-size: 18px;
+    padding-bottom:0px ;
+    position: static;
+}
+
+li a{
+    color: aqua;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.4s ease-in-out;
+    font-family: Arial;
+    padding: 20px 20px 10px 20px;
+}
+
+li a:hover:not(active){
+    background-color: rgb(164, 160, 160);
+}
+
+/*.active{
+    background-color: rgb(60, 21, 21);
+}*/
+
+.search{
+    width: 330px;
+    float: left;
+    margin-left: 270px;
+}
+
+.srch{
+    font-family:Arial;
+    width: 150px;
+    height: 40px;
+    background: transparent;
+    color: chartreuse;
+    border: 1px chartreuse;
+    margin-top: 15px;
+    padding: 10px;
+    border-right: none;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.btn{
+    width: 100px;
+    height: 40px;
+    background: chartreuse;
+    border: 2px solid chartreuse;
+    margin-top: 15px;
+    color: antiquewhite;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+/* container...........................*/
+.container{
+   display: flex;
+   width: 1280px;
+   min-height: 500px;
+   margin: 15px auto 0;
+   flex-direction: row;
+   flex-wrap: wrap;
+}
+.container .card{
+    height:auto;
+    width: 300px;
+    position: relative;
+    margin: 10px;
+    overflow:hidden;
+    box-sizing: border-box;
+    display: flex;
+
+}
+.container .card img{
+    max-width: 100%;
+}
+.intro{
+    height: 200px;
+    width: 228px;
+    padding: 5px;
+    box-sizing: border-box;
+    position: absolute;
+    background:transparent;
+    color: black;
+    bottom: 240px;
+    transition: .5s;
+    visibility: hidden;
+    
+}
+h2{
+    margin: 10px;
+    font-size: 20px;
+    visibility: hidden;
+}
+p{
+    font-size: 10px;
+    margin: 10px;
+    visibility: hidden;
+    opacity: 0;
+}
+.card:hover{
+    cursor: pointer;
+}
+.card:hover .intro{
+    height: 100px;
+    bottom: 50px;
+    background: rgb(50, 208, 233);
+    visibility: visible;
+}
+.card:hover p{
+    opacity: 1;
+    visibility:visible;
+}
+.card:hover h2{
+    opacity: 1;
+    visibility: visible;
+}
+.card:hover img{
+    transform: scale(1.1);
+}
+.content:hover  .overlay{
+    opacity: 0.8;
+    
+
+}
+
+
+/*Footer.............*/
+.footer{
+    background-image: url(footer.jpg);
+    text-align: center;
+    width: 90%;
+   
+    float:left ;
+    padding-left: 10em;
+    color: rgb(148, 209, 87);
+}
+
+.footer p{
+    color: aliceblue;
+}
+
